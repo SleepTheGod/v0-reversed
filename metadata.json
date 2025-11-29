@@ -1,0 +1,5 @@
+{
+  "name": "Gemini v0 Clone",
+  "description": "A high-fidelity clone of a modern AI coding assistant interface, powered by Google's Gemini 2.5 Flash model. Features streaming chat, syntax highlighting, and multimodal input.",
+  "requestFramePermissions": []
+}

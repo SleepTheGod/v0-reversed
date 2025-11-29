@@ -3,6 +3,8 @@ export interface FileAttachment {
   type: string;
   data: string; // base64 encoded data
   preview: string; // data url for preview
+  isText?: boolean; // track if it is a text file
+  textContent?: string; // raw text content for code files
 }
 
 export interface Message {
@@ -12,6 +14,7 @@ export interface Message {
   attachments?: FileAttachment[];
   timestamp: number;
   error?: boolean;
+  isPreviewable?: boolean; // Does this message contain renderable code?
 }
 
 export interface ChatSession {
@@ -19,6 +22,7 @@ export interface ChatSession {
   title: string;
   messages: Message[];
   createdAt: number;
+  lastModified: number;
 }
 
 export interface ChatState {
